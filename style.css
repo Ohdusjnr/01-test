@@ -1,0 +1,22 @@
+.omlette-title {
+  color: black;
+  font-size: 40px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+}
+
+.omlette-duration {
+  color:brown;
+  font-size: 20px;
+}
+
+.omlette-ingredients {
+  color:brown;
+  font-size: 20px;
+}
+
+.omlette-instructions {
+  color:brown;
+  font-size: 20px;
+}
+
