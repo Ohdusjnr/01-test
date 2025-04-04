@@ -25,7 +25,36 @@
   font-size: 20px;
 }
 
-/*h2,
-.omlette-duration-list {
-  background-color: palevioletred;
-} */
+
+.omlette-button {
+  color:red;
+  font-size: 15px;
+}
+
+.nutrition-table {
+  margin-top: 30px;
+}
+  
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30px;
+  max-width: 500px;
+}
+
+.row .name {
+  font-weight: bold;
+  color: hsl(30, 10%, 34%);
+}
+
+.row .value {
+  font-weight:bold;
+  color:brown;
+}
+
+
+.omlette-button {
+  color:red;
+  font-size: 15px;
+  background-color: white;
+}
