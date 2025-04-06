@@ -53,8 +53,32 @@
 }
 
 
-.omlette-button {
+/*.omlette-button {
   color:red;
   font-size: 15px;
   background-color: white;
+}*/
+
+/*Button:active {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  color: #1441d6;
 }
+
+Button:visited {
+  background-color: #c51414;
+  border: 1px solid #ccc;
+  color: #911010;
+}
+
+Button:hover {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  color: #333;
+}
+
+Button:link {
+  background-color: #c51414;
+  border: 1px solid #ccc;
+  color: #911010;
+}*/
