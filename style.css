@@ -1,34 +1,84 @@
+@font-face {
+  font-family: "Young Serif";
+  src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+:root {
+   /* color variable*/
+   --clr-black: hsl(0, 0%, 0%);
+   --clr-white: hsl(0, 0%, 100%);
+   --clr-stone-100: hsl(30, 54%, 90%);
+   --clr-stone-150: hsl(30, 18%, 87%);
+   --clr-stone-600: hsl(30, 10%, 34%);
+   --clr-stone-900: hsl(24, 5%, 18%);
+   --clr-brown-800: hsl(14, 45%, 36%);
+   --clr-rose-800: hsl(332, 51%, 32%);
+   --clr-rose-50: hsl(330, 100%, 98%);
+ 
+   /* font family variable */
+   --ff-main: "Outfit", sans-serif;
+   --ff-headings: "Young Serif", serif;
+ 
+   /* font size variable */
+   --fs-main: 1rem;
+   --fs-headings: 1.75rem;
+ 
+   /* font weight variable */
+   --fw-400: 400;
+   --fw-600: 600;
+   --fw-700: 700;
+ }
+
+ section {
+  margin-top: 2rem;;
+ }
+
+ hr {
+  outline: none;
+  border: none;
+  height: 1px;
+  background: var(--clr-stone-150);
+  margin-top: 2rem;
+}
+
 .omlette-title {
   color: black;
-  font-size: 40px;
-  font-family: 'Arial', sans-serif;
-  font-weight: bold;
+  font-size: 2.5rem;
 }
 
 .omlette-duration {
-  color:brown;
-  font-size: 20px;
+  padding: 1.75rem;
+  margin-top: 2rem;
+  border-radius: 0.8rem;
+  background-color: var(--clr-rose-50);
+}
+h5 {
+  color: var(--clr-brown-800);
+  font-weight: var(--fw-600);
+  font-size: 1.75rem;;
 }
 
-.omlette-ingredients {
-  color:brown;
-  font-size: 20px;
+.wrapper{
+  display: grid;
+  place-items: center;;
 }
 
-.omlette-instructions {
-  color:brown;
-  font-size: 20px;
+.omelette-wrapper {
+  max-width: 45em;
+  padding: 1.75rem;
+  margin: 6rem 0;
+  border-radius: 1.5rem;
+  background: var(--clr-white);
 }
-
-.omlette-nutrition {
-  color:brown;
-  font-size: 20px;
-}
-
-
-.omlette-button {
-  color:red;
-  font-size: 15px;
+.omelette-image {
+  border-radius: 0.8rem;
+  margin-bottom: 2.5rem;
 }
 
 .nutrition-table {
@@ -48,37 +98,71 @@
 }
 
 .row .value {
-  font-weight:bold;
-  color:brown;
+  font-weight: var(--fw-600);;
+  color: var(--clr-brown-800)
 }
 
-
-/*.omlette-button {
-  color:red;
-  font-size: 15px;
-  background-color: white;
-}*/
-
-/*Button:active {
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  color: #1441d6;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+  font-family: var(--ff-headings);
+  font-size: var(--fs-headings);
+  font-weight: var(--fw-400);
+  color: var(--clr-brown-800);
+  margin-bottom: 1.75rem;
 }
 
-Button:visited {
-  background-color: #c51414;
-  border: 1px solid #ccc;
-  color: #911010;
+ul,
+ol {
+  padding: 0 1rem;
 }
 
-Button:hover {
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  color: #333;
+img {
+  display: block;
+  max-width: 100%;
+  font-style: italic;
+  color: var(--clr-stone-800);
 }
 
-Button:link {
-  background-color: #c51414;
-  border: 1px solid #ccc;
-  color: #911010;
-}*/
+body {
+  font-family: var(--ff-main);
+  font-size: var(--fs-main);
+  font-weight: var(--fw-400);
+  color: var(--clr-stone-600);
+  line-height: 1.5;
+  background-color: var(--clr-stone-100);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center:
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 500px) {
+  .omelette-wrapper {
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .omelette-image {
+    border-radius: 0;
+  }
+
+  .omelette-container {
+    padding: 0 1.75rem;
+  }
+
+  .omelette-title {
+    font-size: 2.2rem;
