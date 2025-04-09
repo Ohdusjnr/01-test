@@ -10,6 +10,20 @@
 }
 
 :root {
+  --fw-400: 400;
+  --fw-600: 600;
+  --fw-700: 700;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
    /* color variable*/
    --clr-black: hsl(0, 0%, 0%);
    --clr-white: hsl(0, 0%, 100%);
